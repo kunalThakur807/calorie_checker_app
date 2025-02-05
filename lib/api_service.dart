@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class ApiService {
   static Future<String> sendImageToAPI(String base64Image) async {
-    String apiKey = "AIzaSyANpbN9KfJE0jtqylkBSHmLJysaZOrKxck";
+    String apiKey = "Your_Api_Key";
     String apiUrl =
         "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=$apiKey";
 
