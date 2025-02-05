@@ -35,8 +35,8 @@ class ApiService {
       if (response.statusCode == 200) {
         return json['candidates'][0]['content']['parts'][0]['text'];
       } else {
-        print("Error: ${response.statusCode} - ${response.body}");
-        return '';
+        
+        return '${json['error']['message']}';
       }
     } catch (e) {
       print("Exception: $e");
